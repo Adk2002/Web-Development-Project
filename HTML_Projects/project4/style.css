@@ -1,0 +1,107 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+   
+    background-color: black;
+}
+
+.container
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: rgb(0,0,0);
+    font-family: 'Courier New', Courier, monospace;
+}
+a {
+    text-decoration: none;
+    color: aqua;
+    border-radius: 30px;
+    border: 3px solid antiquewhite;
+    padding: 2rem 5rem;
+    position: relative;
+    overflow: hidden;
+    transition: all 2s;
+}
+
+a:before{
+    content: "Hi!!..There";
+    font-weight: bold;
+    color: black;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: antiquewhite;
+    transform: translatex(-100%);
+    transition: all 1s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+a:hover:before{
+    transform: translateY(0);
+}
+
+
+.container2{
+    align-items: center;
+    justify-content: center;
+}
+.button {
+    --color: #00A97F;
+    padding: 0.8em 1.7em;
+    background-color: transparent;
+    border-radius: .3em;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    transition: .5s;
+    font-weight: 400;
+    font-size: 17px;
+    border: 1px solid;
+    font-family: inherit;
+    text-transform: uppercase;
+    color: var(--color);
+    z-index: 1;
+   }
+   
+   .button::before, .button::after {
+    content: '';
+    display: block;
+    width: 50px;
+    height: 50px;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    border-radius: 50%;
+    z-index: -1;
+    background-color: var(--color);
+    transition: 1s ease;
+   }
+   
+   .button::before {
+    top: -1em;
+    left: -1em;
+   }
+   
+   .button::after {
+    left: calc(100% + 1em);
+    top: calc(100% + 1em);
+   }
+   
+   .button:hover::before, .button:hover::after {
+    height: 410px;
+    width: 410px;
+   }
+   
+   .button:hover {
+    color: rgb(10, 25, 30);
+   }
+   
+   .button:active {
+    filter: brightness(.8);
+   }
+   
