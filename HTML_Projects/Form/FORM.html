@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>FORM</title>
+    <meta charset="UTX-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="FORM.css">
+</head>
+
+<body>
+    <center><h1>NEILIT Course Form</h1></center>
+    <div class="main">
+        <form class="content">
+            <div class="class-1">
+                <label for="name">Name: </label>
+                <input type="text" , placeholder="Enter your Name">
+
+                <label for="Fathers Name">Fathers Name: </label>
+                <input type="text" , placeholder="Enter name">
+
+                <label for="Mothers Name">Mothers Name: </label>
+                <input type="text" , placeholder="Enter name">
+
+                <label for="Number">Mobile Number: </label>
+                <input type="number" , placeholder="Enter number">
+            </div>
+
+            <h2>Qualification Details</h2>
+            <div class="ta" style="overflow-x:auto;">
+                <table>
+                    <th>Exam</th>
+                    <th>Subjects</th>
+                    <th>Marks Obtained</th>
+                    <th>Total Marks</th>
+                    <th>Generated Marks</th>
+                    <th>Year</th>
+                    <th>Insititution</th>
+                    <th>BOARD</th>
+                    </tr>
+
+                    <tr>
+                        <td>HSLC</td>
+                        <td><input type="text" id="Subjects" name="Subjects" required></td>
+                        <td><input type="number" id="Number" name="Number" required></td>
+                        <td><input type="number" id="Number" name="Number" required></td>
+                        <td><input type="number" id="Number" name="Number" required></td>
+                        <td><input type="number" id="Number" name="Number" required></td>
+                        <td><input type="text" id="School" name="School" required></td>
+                        <td><input type="text" id="Board" name="Board" required></td>
+                    </tr>
+
+                    <tr>
+                        <td>HS</td>
+                        <td><input type="text" id="Subjects" name="Subjects" required></td>
+                        <td><input type="number" id="Number" name="Number" required></td>
+                        <td><input type="number" id="Number" name="Number" required></td>
+                        <td><input type="number" id="Number" name="Number" required></td>
+                        <td><input type="number" id="Number" name="Number" required></td>
+                        <td><input type="text" id="School" name="School" required></td>
+                        <td><input type="text" id="Board" name="Board" required></td>
+                    </tr>
+
+                    <tr>
+                        <td>Others</td>
+                        <td><input type="text" id="Subjects" name="Subjects" required></td>
+                        <td><input type="number" id="Number" name="Number" required></td>
+                        <td><input type="number" id="Number" name="Number" required></td>
+                        <td><input type="number" id="Number" name="Number" required></td>
+                        <td><input type="number" id="Number" name="Number" required></td>
+                        <td><input type="text" id="School" name="School" required></td>
+                        <td><input type="text" id="Board" name="Board" required></td>
+                    </tr>
+
+                    <tr>
+                        <td>Degree</td>
+                        <td><input type="text" id="Subjects" name="Subjects" required></td>
+                        <td><input type="number" id="Number" name="Number" required></td>
+                        <td><input type="number" id="Number" name="Number" required></td>
+                        <td><input type="number" id="Number" name="Number" required></td>
+                        <td><input type="number" id="Number" name="Number" required></td>
+                        <td><input type="text" id="School" name="School" required></td>
+                        <td><input type="text" id="Board" name="Board" required></td>
+                    </tr>
+                </table>
+            </div>
+            <h2>Documents</h2>
+            <div id="bottom_div">
+                <label for="signature">Upload Signature: </label>
+                <input type="file" id="upload" accept=".pdf, .jpg, .jpeg" required>
+
+                <label for="upload">Passport Size Photo: </label>
+                <input type="file" id="upload" accept=".jpeg, .jpg" required>
+
+                <label for="upload2">Enter Aadhar: </label>
+                <input type="file" id="upload2" accept=".jpeg, .jpg" required>
+
+                <label for="mail">Email: </label>
+                <input type="email" id="email" placeholder="Enter Email" required>
+            </div>
+            <button class="submit">Submit</button>
+        </form>
+    </div>
+</body>
+</html>

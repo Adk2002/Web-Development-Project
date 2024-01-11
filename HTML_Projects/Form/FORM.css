@@ -1,0 +1,35 @@
+*{
+    padding: 3px;
+    margin: 0;
+    box-sizing: border-box;
+    border-radius: 10px;
+    font-size: 15px;
+    background-color: rgb(204, 204, 204);
+
+}
+.main{
+    position: relative;
+    margin: 15px;
+    
+}
+.main h2{
+    text-align: center;
+    padding-bottom: 20px;
+}
+.main .content #bottom_div{
+    display: flex;
+    flex-direction: column;
+}
+.main .content #bottom_div #email{
+    width: 300px;
+}
+.main .content button{
+    margin-top: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: rgb(34, 79, 34);
+}
+#Board
+{
+    text-transform: uppercase;
+}
