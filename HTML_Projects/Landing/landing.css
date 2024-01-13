@@ -1,0 +1,277 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+}
+
+#nav-bar {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    position: relative;
+    background: linear-gradient(to right, rgb(20, 43, 52), rgb(22, 174, 204), rgb(4, 123, 128), rgb(20, 43, 52));
+    border-bottom: 2px;
+    height: 10%;
+    width: 100%;
+    gap: 30px;
+    padding-right: 5%;
+}
+
+#nav-bar a {
+    text-decoration: none;
+    color: bisque;
+    font-size: 20px;
+    font-family: 'Salsa', cursive;
+    border: 1.5px solid #000;
+    padding: 4px 9px;
+    border-radius: 50px;
+    margin: 0 7px;
+    font-weight: 500;
+}
+
+#nav-bar img {
+    display: flex;
+    justify-content: flex-start;
+    width: 150px;
+    height: auto;
+    mix-blend-mode: darken;
+}
+
+#main {
+    height: 100%;
+    width: 100%;
+    background-image: url("https://images.unsplash.com/photo-1560364897-91578ff41817?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+    backdrop-filter: blur(4px);
+    display: flex;
+}
+
+#part1 {
+    height: 100%;
+    width: 26%;
+    /* background-color: black; */
+
+}
+
+#part2 {
+    height: 100%;
+    width: 68%;
+    background-color: black;
+    background-image: url(https://images.pexels.com/photos/847393/pexels-photo-847393.jpeg?auto=compress&cs=tinysrgb&w=600);
+    /* background-repeat: no-repeat; */
+    background-position: center;
+    background-size: cover;
+}
+
+#overlay {
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.17);
+
+}
+
+#part3 {
+    height: 100%;
+    width: 8%;
+    /* background-color: maroon; */
+
+}
+
+#text-div {
+    /* height: 300px; */
+    position: absolute;
+    width: 400px;
+    /* background-color: red; */
+    left: 7%;
+    top: 50%;
+    transform: translate(0, -50%);
+}
+
+#text-div>h1 {
+    font-size: 95px;
+    font-family: monument;
+    font-weight: 700;
+    letter-spacing: 8px;
+    line-height: 78px;
+    color: white;
+    text-transform: uppercase;
+}
+
+#small-img {
+    height: 400px;
+    width: 350px;
+    background-image: url(https://images.pexels.com/photos/137613/pexels-photo-137613.jpeg?auto=compress&cs=tinysrgb&w=600);
+    /* background-color: blue; */
+    position: absolute;
+    top: 50%;
+    right: 5%;
+    transform: translate(0, -50%);
+}
+
+#vertical-text {
+    position: absolute;
+    right: 5%;
+    bottom: 40%;
+    /* transform-origin: 0% 15%; */
+}
+
+#vertical-text h1 {
+    font-size: 70px;
+    font-weight: 700;
+    font-family: monument;
+    color: transparent;
+    letter-spacing: 10px;
+    transform: rotate(90deg);
+
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: rgb(239, 229, 229);
+}
+
+#main2 {
+    position: relative;
+    padding-top: 4px;
+    height: auto;
+    /* width: 100%; */
+    color: aliceblue;
+    background-color: rgba(7, 21, 37, 0.956);
+    padding-bottom: 7px;
+}
+
+#main2>h1 {
+    padding-top: 10px;
+    color: antiquewhite;
+    text-transform: uppercase;
+    font-size: 30px;
+    text-align: center;
+    padding-bottom: 30px;
+}
+
+#main2>p {
+    font-size: 1.5rem;
+    padding-left: 20px;
+    text-align: left;
+    align-items: center;
+    font-family: 'Salsa', cursive;
+}
+
+#main3 {
+    position: relative;
+    padding-top: 4px;
+    height: 80%;
+    /* width: 100%; */
+    color: aliceblue;
+    background-color: rgb(1, 12, 28);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+#main3>.content {
+    animation: changeImage 5s ease infinite;
+    border-radius: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.9);
+    height: 90%;
+    width: 90%;
+    background-size: 100% 100%;
+    transition: ease 1.5s;
+    background-image: url(./pexels-egor-kamelev-920163.jpg);
+}
+
+@keyframes changeImage {
+    25% {
+        background-image: url(./pexels-tom-fisk-1125979.jpg);
+    }
+
+    50% {
+        background-image: url(./pexels-tom-fisk-668790.jpg);
+    }
+
+    100% {
+        background-image: url(./pexels-george-desipris-726478.jpg);
+    }
+}
+
+#back {
+    height: 100%;
+    margin-top: 0;
+    background-color: rgba(4, 4, 54, 0.819);
+}
+
+#container {
+    display: flex;
+    /* margin: 30px; */
+    justify-content: space-evenly;
+    align-items: center;
+
+}
+
+#card {
+    margin-top: 10%;
+    border-radius: 15px;
+    align-items: center;
+    height: 400px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.9);
+    overflow: hidden;
+    position: relative;
+}
+
+img {
+    height: 400px;
+    width: 350px;
+}
+
+.intro {
+    height: 100vh;
+    width: 350px;
+    padding: 6px;
+    box-sizing: border-box;
+    position: relative;
+    bottom: 240px;
+    background: rgba(0, 0, 0, 0.293);
+    color: bisque;
+    transition: 1s;
+}
+
+.intro h1 {
+    margin: 5%;
+    font-size: 40px;
+    /* visibility: hidden; */
+    /* opacity: 0; */
+}
+
+.intro p {
+    font-size: 20px;
+    margin: 20px;
+    visibility: hidden;
+    opacity: 0;
+}
+
+.intro span {
+    font-weight: bold;
+}
+
+#card:hover {
+    cursor: pointer;
+}
+
+#card:hover .intro {
+    height: 233px;
+    bottom: 240px;
+    background: rgba(0, 0, 0, 0.137);
+}
+
+#card:hover p {
+    opacity: 1;
+    visibility: visible;
+}
+
+#card:hover img {
+    transform: scale(1.1) rotate(-3deg);
+    transition: all ease 1s;
+}
